@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Happy Valentine</title>
-<meta name="keywords" content="情侣,浪漫表白,js特效,代码"/>
-<meta name="description" content="情侣浪漫表白js特效代码。"/>
+<title>一周年快乐</title>
+<!--<meta name="keywords" content="情侣,浪漫表白,js特效,代码"/>-->
+<!--<meta name="description" content="情侣浪漫表白js特效代码。"/>-->
 <style type="text/css">
 @font-face {
 	font-family: digit;
@@ -24,55 +24,66 @@
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
-			Boy name = <span class="keyword">冷</span> 家豪<br />
-			Girl name = <span class="keyword">盛</span> 文怡<br />
-			<span class="comments">// Fall in love river. </span><br />
-			The boy love the girl;<br />
-			<span class="comments">// They love each other.</span><br />
-			The girl loved the boy;<br />
-			<span class="comments">// AS time goes on.</span><br />
-			The boy can not be separated the girl;<br />
-			<span class="comments">// At the same time.</span><br />
-			The girl can not be separated the boy;<br />
-			<span class="comments">// Both wind and snow all over the sky.</span><br />
-			<span class="comments">// Whether on foot or 5 kilometers.</span><br />
-			<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
-			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
-			<span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
-			<span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
-			<span class="placeholder"/>The boy has but one dream;<br />
-			<span class="comments">// The boy wants the girl could well have been happy.</span><br />
-			<br>
-			<br>
-			I want to say:<br />
-			Baby, I love you forever;<br />
+			<span class="comments">From</span><br />
+			<span class="space"/><span class="comments">/*</span> <span span class="keyword"> 2021—08-07</span><br />
+			<span class="comments">Now</span><br/>
+			<span class="space"/><span class="comments">/* </span><span class="keyword" id="localTime"> </span><br />
+			<h3>
+			<span class="keyword">冷家豪 盛文怡</span> <br/></h3>
+			<span class="comments"> 不知不觉. </span><br />
+			<span class="placeholder"> <span class="comments"/>已经过去了一个春夏秋冬.<br />
+			<span class="comments"> 异地的时候.</span><br />
+			<span class="placeholder"/>珍惜每一条消息，每一个电话，每一场视频.<br />
+			<span class="comments"> 直到你来我身边.</span><br />
+			<span class="placeholder"/>我才发现...自己养了只鹅.<br />
+			<span class="comments"> 一年很长.</span><br />
+			<span class="placeholder"/>365个日日夜夜.<br />
+			<span class="comments"> 一年又很短.</span><br />
+				<span class="placeholder"> 和你一起欢乐的时光总是很短暂.</span><br /></span>
+			<span class="keyword">希望今后，少些争吵，多些包容与理解</span><br />
+			<span class="keyword">毕竟以后还有很多很多年！</span><br />
+			<span class="placeholder"/> <h1><span class="keyword">宝贝，一周年快乐！</span></h1>
+			<h1><span class="keyword"/>You had me at hello</h1> <br/>
 		</div>
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
 			<div id="words">
 				<div id="messages">
-					亲爱的，这是我们相爱在一起的时光。
+					我们在一起已经：
 					<div id="elapseClock"></div>
 				</div>
 				<div id="loveu">
-					爱你直到永永远远。<br/>
-					<div class="signature">- 爱你的人</div>
+					Forever<br/>
+					<div class="signature">Neang GaHo & Seong muni</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="copyright">
-		<a href="#">....</a><br />
-		<a href="#">....</a><br />
-		
-	</div>
 </div>
 
 <script type="text/javascript">
+	var da = new Date();
+
+	var year = da.getFullYear() + '-';
+
+	var month = da.getMonth()  + 1 ;
+	if(month<10){
+		month="0"+month;
+	}
+	month  = month + '-';
+	var date = da.getDate();
+	if(date<10){
+		date="0"+date;
+	}
+
+
+	//以上就完成了当前时间的格式设置，接下来就是给span标签赋值：
+
+	$('#localTime').text(year + month + date);
 var offsetX = $("#loveHeart").width() / 2;
 var offsetY = $("#loveHeart").height() / 2 - 55;
 var together = new Date();
-together.setFullYear(2021, 8, 7);
+together.setFullYear(2021, 7, 7);
 together.setHours(0);
 together.setMinutes(0);
 together.setSeconds(0);
