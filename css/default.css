@@ -1,20 +1,156 @@
-﻿body{margin:0;padding:0;background: #ffefee;font-size:12px;overflow:auto}
-#mainDiv{width:100%;height:100%}
-#loveHeart{float:left;width:670px;height:625px}
-#garden{width:100%;height:100%}
-#elapseClock{text-align:right;font-size:18px;margin-top:10px;margin-bottom:10px}
-#words{font-family:"sans-serif";width:500px;font-size:24px;color:#9F88FF}
-#messages{display:none}
-#elapseClock .digit{font-family:"digit";font-size:36px}
-#loveu{padding:5px;font-size:22px;margin-top:80px;margin-right:80px;text-align:right;display:none}
-#loveu .signature{margin-top:10px;font-size:20px;margin-right:2px;font-style:italic}
-#clickSound{display:none}
-#code{float:left;width:440px;height:400px;color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}
-#code .string{color:#2a36ff}
-#code .keyword{color:#7f0055;font-weight:bold}
-#code .placeholder{margin-left:15px}#code .space{margin-left:7px}
-#code .comments{color: #be88ff
+﻿/* background:#ffe */
+body {
+    margin: 0;
+    padding: 0;
+;
+    font-size: 12px;
+    overflow: auto
 }
-#copyright{margin-top:10px;text-align:center;width:100%;color:#666}
-#errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}
-#copyright a{color:#666}
+
+/* 新增样式 */
+body {
+    background-color: black;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: 0 !important;
+}
+
+#stars {
+    position: absolute;
+    z-index: 10;
+    left: 0
+}
+
+#code {
+    position: absolute;
+    z-index: 100;
+    left: 10%
+}
+
+#loveHeart {
+    position: absolute;
+    right: -15%;
+    margin-top: 1%;
+}
+
+
+/* 原来样式 */
+#mainDiv {
+    width: 100%;
+    height: 100%
+}
+
+#loveHeart {
+    float: left;
+    width: 670px;
+    height: 625px
+}
+
+#garden {
+    width: 100%;
+    height: 100%
+}
+
+#elapseClock {
+    text-align: right;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+#words {
+    font-family: "sans-serif";
+    width: 500px;
+    font-size: 24px;
+    color: #666
+}
+
+#messages {
+    display: none
+}
+
+#elapseClock .digit {
+    font-family: "digit";
+    font-size: 36px
+}
+
+#loveu {
+    padding: 5px;
+    font-size: 22px;
+    margin-top: 80px;
+    margin-right: 120px;
+    text-align: right;
+    display: none
+}
+
+#loveu .signature {
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic
+}
+
+#clickSound {
+    display: none
+}
+
+#code {
+    float: left;
+    width: 440px;
+    height: 400px;
+    color: #333;
+    font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+    font-size: 12px
+}
+
+#code .string {
+    color: #2a36ff
+}
+
+#code .keyword {
+    color: rgba(222, 130, 127, 0.76);
+    font-weight: bold
+}
+
+#code .placeholder {
+    margin-left: 15px
+}
+
+#code .space {
+    margin-left: 7px
+}
+
+#code .comments {
+    color: rgba(244, 248, 248, 0.49)
+}
+
+#copyright {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    color: #666
+}
+
+#errorMsg {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 100px;
+    left: 0
+}
+
+#copyright a {
+    color: #666
+}
